@@ -1,15 +1,8 @@
-Gmail	Gal Shay שי <galshay24@gmail.com>
-sss
-Gal Shay שי <galshay24@gmail.com>	Wed, Feb 11, 2026 at 8:16 AM
-To: Gal Shay שי <galshay24@gmail.com>
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <title>Talia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <style>
     :root {
       --bg: #faf8f3;
@@ -38,10 +31,6 @@ To: Gal Shay שי <galshay24@gmail.com>
       position: -webkit-sticky; /* Safari support */
       top: 0;
       background-color:#8b0000 !important;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px); /* Safari support */
-      border-bottom: 1px solid var(--border);
-      box-shadow: 0 2px 20px rgba(212, 175, 55, 0.1);
       z-index: 9999;
       width: 100%;
       min-height: 60px;
@@ -641,7 +630,7 @@ To: Gal Shay שי <galshay24@gmail.com>
     <div class="video-container">
       <button class="close-video" id="closeVideoBtn">&times;</button>
       <video id="mobileVideoPlayer" controls style="display: none;">
-        <source src="Mobile.mp4" type="video/mp4">
+        <source src="https://talia-zeta.vercel.app/Mobile.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <video id="handVideoPlayer" controls style="display: none;">
@@ -657,11 +646,11 @@ To: Gal Shay שי <galshay24@gmail.com>
   
   <script>
     const products = [
-      { id: 'hand', name: 'היד שתהפוך את העולם', price: 39.90, images: ['hand1.jpeg', 'hand2.jpeg'],video:'hand.mp4', description: 'פסל יד מדהים בעיצוב אמנותי ייחודי. פריט דקורטיבי ממושכים לבית או למשרד, עשוי מחומרים איכותיים ומיוצר בקפידה רבה.' },
-      { id: 'pillow', name: 'משפט חוזקה', price: 24.50, images: ['Stregent2.jpeg'], description: 'משפט חיזוק והשראה מעוצב באיכות גבוהה. יחזק את המורל ויעניק אנרגיה חיובית לבית או למשרד.' },
-      { id: 'art', name: 'אמנות קיר', price: 59.00, images: ['Stregent1.jpeg'], description: 'יצירת אמנות מיוחדת לקיר. עיצוב מודרני ואלגנטי שיהפוך כל חלל למקום מדהים ומשרה אווירה ייחודית.' },
-      { id: 'lamp', name: 'מעמד לתכשיטים', price: 45.00, images: ['Stand1.jpeg', 'Stand2.jpeg'],description:'מעמד ייחודי לתכשיטים, בעיצוב אלגנטי ומודרני. עשוי מחומרים איכותיים, הוא משלב פונקציונליות עם אסתטיקה, ומאפשר לך לארגן ולהציג את התכשיטים שלך בצורה יפה ומסודרת.' },
-      { id: 'rug', name: 'מוביל אבנים', price: 129.00, images: ['Mobile1.jpeg', 'Mobile2.jpeg', 'Mobile3.jpeg'],video:'Mobile.mp4', description: 'מוביל אבנים מדהים בעיצוב מינימליסטי. פריט דקורטיבי ייחודי שמביא שלווה ואלגנטיות לכל חלל. עשוי מחומרים טבעיים ואיכותיים.' },
+      { id: 'hand', name: 'היד שתהפוך את העולם', price: 39.90, images: ["https://talia-zeta.vercel.app/hand1.jpeg", "https://talia-zeta.vercel.app/hand2.jpeg"],video:'https://talia-zeta.vercel.app/hand.mp4', description: 'פסל יד מדהים בעיצוב אמנותי ייחודי. פריט דקורטיבי ממושכים לבית או למשרד, עשוי מחומרים איכותיים ומיוצר בקפידה רבה.' },
+      { id: 'pillow', name: 'משפט חוזקה', price: 24.50, images: ['https://talia-zeta.vercel.app/Stregent2.jpeg'], description: 'משפט חיזוק והשראה מעוצב באיכות גבוהה. יחזק את המורל ויעניק אנרגיה חיובית לבית או למשרד.' },
+      { id: 'art', name: 'אמנות קיר', price: 59.00, images: ['https://talia-zeta.vercel.app/Stregent1.jpeg'], description: 'יצירת אמנות מיוחדת לקיר. עיצוב מודרני ואלגנטי שיהפוך כל חלל למקום מדהים ומשרה אווירה ייחודית.' },
+      { id: 'lamp', name: 'מעמד לתכשיטים', price: 45.00, images: ['https://talia-zeta.vercel.app/Stand1.jpeg', 'https://talia-zeta.vercel.app/Stand2.jpeg'],description:'מעמד ייחודי לתכשיטים, בעיצוב אלגנטי ומודרני. עשוי מחומרים איכותיים, הוא משלב פונקציונליות עם אסתטיקה, ומאפשר לך לארגן ולהציג את התכשיטים שלך בצורה יפה ומסודרת.' },
+      { id: 'rug', name: 'מוביל אבנים', price: 129.00, images: ['https://talia-zeta.vercel.app/Mobile1.jpeg', 'https://talia-zeta.vercel.app/Mobile2.jpeg', 'https://talia-zeta.vercel.app/Mobile3.jpeg'],video:'https://talia-zeta.vercel.app/Mobile.mp4', description: 'מוביל אבנים מדהים בעיצוב מינימליסטי. פריט דקורטיבי ייחודי שמביא שלווה ואלגנטיות לכל חלל. עשוי מחומרים טבעיים ואיכותיים.' },
 ,
     ];
 
